@@ -210,6 +210,7 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .para3 {
@@ -236,22 +237,7 @@ footer {
   height: 50px;
   bottom: 0%;
   position: absolute;
-}
-
-.linkedin {
-  size: 30px;
-  width: 20px;
-}
-
-.facebook {
-  size: 30px;
-  width: 20px;
-}
-
-.insta {
-  size: 30px;
-  width: 20px;
-  background-color: aqua;
+  background-color: #830ad1;
 }
 
 .rodape {
@@ -260,18 +246,302 @@ footer {
   padding: 0;
 }
 
-.logolinkedin {
+/*CACHORROS*/
+.parte2 {
   display: flex;
+  flex-direction: column;
+  margin-top: 40px;
 }
 
-.logoface {
-  display: flex;
+.moredogs {
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: #6aebb9;
+  width: 350px;
+  margin-right: 30px;
+  margin-top: 50px;
 }
 
-.logoinsta {
+.dogsmore {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
+.aba2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.nossosanimais {
+  color: #00d583;
+  font-size: 50px;
+}
+
+.animais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.cachorro1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 30px;
+}
+
+.dog1 {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.auau1 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.chorro1 {
+  text-align: center;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adote1 {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+}
+
+.cachorro2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dog2 {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.auau2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.chorro2 {
+  text-align: center;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adote2 {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+}
+
+.cachorro3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+}
+
+.dog3 {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.auau3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.chorro3 {
+  text-align: center;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adote3 {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+}
+
+/* GATOS */
+.parte3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.morecats {
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: #6aebb9;
+  width: 350px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+
+.catsmore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.animais2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.gato1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 30px;
+}
+
+.cat1 {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.meow1 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.gatinho1 {
+  text-align: center;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adote1 {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+}
+
+.gato2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cat2 {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.meow2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.gatinho2 {
+  text-align: center;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adote2 {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+}
+
+.gato3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+}
+
+.cat3 {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.meow3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.gatinho3 {
+  text-align: center;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adote3 {
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 140px;
+}
 /*media quierie*/
 
 @media (max-width: 700px) {
