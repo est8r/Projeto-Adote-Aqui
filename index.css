@@ -1,0 +1,296 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #ebebec;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  color: white;
+  justify-content: space-between;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-weight: 800;
+}
+
+.logonome {
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  padding-right: 0%;
+  font-weight: 400;
+}
+
+.logonome2 {
+  font-size: 20px;
+  padding: 10px;
+  color: #830ad1;
+  padding-left: 0%;
+  font-weight: 800;
+}
+
+/*h1:hover {
+  font-size: 22px;
+}*/
+
+.logo {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.lista {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  padding: 20px;
+  margin: 20px;
+  color: #919191;
+}
+
+a:hover {
+  color: #00e78d;
+}
+
+.tres {
+  padding-right: 40px;
+}
+
+.botao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+button {
+  display: flex;
+  color: white;
+  background-color: #830ad1;
+  height: 50px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #00e78d;
+  color: black;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+/* -- cabeçalho acabou */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1af3a0;
+}
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 320px;
+  padding-left: 20px;
+}
+
+.esquerda {
+  background-image: url(https://www.hospitalveterinariolevet.com.br/site/wp-content/uploads/2020/10/dog-playtime-927x388-1.jpg);
+  width: 60%;
+}
+
+.titulo2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.paradireita {
+  font-size: 12px;
+  background-color: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.adotepet {
+  font-size: 15px;
+  height: 40px;
+  width: 120px;
+}
+
+.adotepet:hover {
+  background-color: white;
+  border-color: #830ad1;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.adotar {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #00d583;
+  padding-bottom: 10px;
+}
+
+.para1 {
+  font-size: 12px;
+  padding: 25px;
+  background-color: white;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.para2 {
+  font-size: 12px;
+  padding: 25px;
+  background-color: white;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.paragrafos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.para3 {
+  font-size: 12px;
+  padding: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: white;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 100%;
+  width: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  bottom: 0%;
+  position: absolute;
+}
+
+.linkedin {
+  size: 30px;
+  width: 20px;
+}
+
+.facebook {
+  size: 30px;
+  width: 20px;
+}
+
+.insta {
+  size: 30px;
+  width: 20px;
+  background-color: aqua;
+}
+
+.rodape {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.logolinkedin {
+  display: flex;
+}
+
+.logoface {
+  display: flex;
+}
+
+.logoinsta {
+  display: flex;
+}
+
+/*media quierie*/
+
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    height: auto;
+  }
+
+  h1 {
+    display: none;
+  }
+  .lista {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .botao {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}

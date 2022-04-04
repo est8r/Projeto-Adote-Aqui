@@ -1,0 +1,20 @@
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    height: auto;
+  }
+
+  h1 {
+    display: none;
+  }
+  .lista {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .botao {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
