@@ -15,6 +15,13 @@ body {
   align-items: center;
 }
 
+/* HEADER ------------------------------------------------------------*/
+
+.header1 {
+  display: flex;
+  width: 100%;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -26,6 +33,7 @@ header {
   padding-right: 45px;
   padding-left: 45px;
   font-weight: 800;
+  position: fixed;
 }
 
 .logonome {
@@ -66,7 +74,7 @@ nav {
   flex-direction: row;
 }
 
-a {
+.item {
   display: flex;
   color: white;
   flex-direction: row;
@@ -75,12 +83,20 @@ a {
   color: #919191;
 }
 
-a:hover {
-  color: #00b5fe;
+.item:hover {
+  color: #e85c1f;
 }
 
 .tres {
-  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+  padding: 20px;
+  color: #919191;
+}
+
+.tres:hover {
+  color: #e85c1f;
 }
 
 .botao {
@@ -90,7 +106,7 @@ a:hover {
   height: 50px;
 }
 
-button {
+.cadastro {
   display: flex;
   color: white;
   background-color: #e85c1f;
@@ -105,15 +121,12 @@ button {
   font-size: 18px;
 }
 
-button:hover {
-  background-color: #0378ba;
-  color: black;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
+.cadastro:hover {
+  background-color: #006847;
+  color: white;
 }
 
-/* -- cabeçalho acabou */
+/* -- HOME ---------------------------------------------------- */
 
 .card {
   display: flex;
@@ -126,6 +139,8 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   background-color: #006847;
+  margin-top: 70px;
+  height: 350px;
 }
 
 .direita {
@@ -133,7 +148,6 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  height: 320px;
   padding-left: 20px;
 }
 
@@ -157,6 +171,15 @@ button:hover {
 }
 
 .adotepet {
+  display: flex;
+  color: white;
+  background-color: #e85c1f;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  font-weight: 800;
   font-size: 15px;
   height: 40px;
   width: 120px;
@@ -167,6 +190,7 @@ button:hover {
   border-color: #ff9a00;
   border-width: 1px;
   border-style: solid;
+  color: black;
 }
 
 .info {
@@ -225,8 +249,12 @@ button:hover {
 
 img {
   border-radius: 100%;
-  width: 300px;
+  width: 170px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
+
+/* FOOTER -----------------------------------------------------------*/
 
 footer {
   display: flex;
@@ -235,8 +263,7 @@ footer {
   width: 100%;
   height: 50px;
   bottom: 0%;
-  position: absolute;
-  background-color: #ff9a00;
+  background-color: white;
 }
 
 .rodape {
@@ -245,35 +272,44 @@ footer {
   padding: 0;
 }
 
-/*CACHORROS*/
+/* ABA NOSSOS ANIMAIS - CACHORROS-----------------------------------------------------------------------------*/
 
 .parte2 {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-}
-
-.moredogs {
-  margin: 10px;
-  margin-bottom: 20px;
-  background-color: #e85c1f;
-  width: 350px;
-  margin-right: 30px;
-  margin-top: 50px;
-}
-
-.moredogs:hover {
+  padding-top: 30px;
   background-color: #003d2a;
-  color: white;
 }
 
-.dogsmore {
+.more {
+  display: flex;
+  color: white;
+  background-color: #e85c1f;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 350px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.more:hover {
+  background-color: rgba(255, 255, 255, 0.825);
+  color: black;
+}
+
+.botaomais {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   align-content: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .aba2 {
@@ -281,11 +317,13 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  background-color: #003d2a;
 }
 
 .nossosanimais {
-  color: #006847;
+  color: white;
   font-size: 50px;
+  padding-top: 50px;
 }
 
 .animais {
@@ -296,7 +334,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.cachorro1 {
+.pet1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,33 +345,40 @@ footer {
   margin-left: 30px;
 }
 
-.dog1 {
-  width: 170px;
-  margin-top: 20px;
-}
-
-.auau1 {
+.nome {
   margin-top: 10px;
   font-size: 20px;
 }
 
-.chorro1 {
+.descricao {
   text-align: center;
   margin: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
 }
 
-.adote1 {
+.botaoadote {
+  display: flex;
+  color: white;
+  background-color: #e85c1f;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 16px;
   margin: 10px;
   margin-bottom: 20px;
   height: 40px;
   width: 140px;
 }
 
-.cachorro2 {
+.botaoadote:hover {
+  background-color: #006847;
+}
+
+.pet2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,33 +388,7 @@ footer {
   box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
 }
 
-.dog2 {
-  width: 170px;
-  margin-top: 20px;
-}
-
-.auau2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.chorro2 {
-  text-align: center;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.adote2 {
-  margin: 10px;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 140px;
-}
-
-.cachorro3 {
+.pet3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,199 +399,35 @@ footer {
   margin-right: 30px;
 }
 
-.dog3 {
-  width: 170px;
-  margin-top: 20px;
-}
-
-.auau3 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.chorro3 {
-  text-align: center;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.adote3 {
-  margin: 10px;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 140px;
-}
-
-/* GATOS */
+/* ABA NOSSOS ANIMAIS - GATOS--------------------------------------------------------------- */
 
 .parte3 {
   display: flex;
   flex-direction: column;
-}
-
-.morecats {
-  margin: 10px;
-  margin-bottom: 20px;
-  background-color: #e85c1f;
-  width: 350px;
-  margin-right: 30px;
-  margin-top: 50px;
-}
-
-.morecats:hover {
   background-color: #003d2a;
-  color: white;
 }
 
-.catsmore {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.animais2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.gato1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  border-radius: 20px;
-  justify-content: center;
-  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
-  margin-left: 30px;
-}
-
-.cat1 {
-  width: 170px;
-  margin-top: 20px;
-}
-
-.meow1 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.gatinho1 {
-  text-align: center;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.adote1 {
-  margin: 10px;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 140px;
-}
-
-.gato2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  border-radius: 20px;
-  justify-content: center;
-  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
-}
-
-.cat2 {
-  width: 170px;
-  margin-top: 20px;
-}
-
-.meow2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.gatinho2 {
-  text-align: center;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.adote2 {
-  margin: 10px;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 140px;
-}
-
-.gato3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  border-radius: 20px;
-  justify-content: center;
-  box-shadow: 0 4px 25px 4px rgba(0, 0, 0, 0.2);
-  margin-right: 30px;
-}
-
-.cat3 {
-  width: 170px;
-  margin-top: 20px;
-}
-
-.meow3 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.gatinho3 {
-  text-align: center;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.adote3 {
-  margin: 10px;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 140px;
-}
-
-/*ABA AJUDE*/
+/*ABA AJUDE----------------------------------------------------------*/
 
 .aba3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  background-color: #703200;
+  padding-bottom: 50px;
 }
 
 .comoajudar {
-  color: #006847;
+  color: white;
   font-size: 50px;
+  padding-top: 50px;
 }
 
 .parte4 {
   display: flex;
   flex-direction: column;
 }
-/* PIX */
+/* ABA AJUDE - PIX----------------------------------------------------------- */
 
 .pix {
   display: flex;
@@ -612,7 +467,7 @@ footer {
   color: white;
 }
 
-/*apadrinhamento*/
+/* ABA AJUDE - apadrinhamento-----------------------------------------------------*/
 
 .apadrinhar {
   display: flex;
@@ -649,7 +504,7 @@ footer {
   text-align: right;
 }
 
-/*LAR TEMPORARIO*/
+/* ABA AJUDE - LAR TEMPORARIO------------------------------------------------------------*/
 
 .lartemporario {
   display: flex;
@@ -684,30 +539,70 @@ footer {
   color: white;
 }
 
-.botaolar {
-  margin-left: 0;
-  padding-left: 0;
+.botaoajuda {
+  margin-top: 20px;
+  color: white;
+  text-decoration: underline;
+}
+
+.botaoajuda:hover {
+  color: #006847;
 }
 
 /*media quierie*/
 
 @media (max-width: 700px) {
+  .header1 {
+    display: flex;
+  }
+
   header {
     display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
     height: auto;
   }
 
-  h1 {
-    display: none;
+  .logo {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
   }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
   .lista {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     height: auto;
   }
+
+  a {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+  }
+
+  .tres {
+    display: block;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
   .botao {
     display: flex;
-    flex-direction: column;
-    height: auto;
+  }
+
+  .cadastro {
+    justify-content: center;
+    align-items: center;
   }
 }
